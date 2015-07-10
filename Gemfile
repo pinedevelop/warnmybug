@@ -27,3 +27,4 @@ group :development, :test do
 end
 
 gem 'bower-rails'
+gem 'devise'
