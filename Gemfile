@@ -34,3 +34,4 @@ gem 'web-console', group: :development
 
 gem 'bower-rails'
 gem 'devise'
+gem 'enumerate_it'
