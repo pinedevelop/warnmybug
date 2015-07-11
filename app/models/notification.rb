@@ -7,4 +7,11 @@ class Notification < ActiveRecord::Base
   
   belongs_to :project
   has_one :browser_info
+  
+  after_create :notify
+  
+  def notify
+    NotificationCenter.new.notify(id)
+  end
+  
 end

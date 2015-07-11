@@ -2,6 +2,7 @@ class Project < ActiveRecord::Base
   validates :name, presence: true
   
   has_many :notifications
+  has_and_belongs_to_many :users
   
   before_create :generate_uid
   

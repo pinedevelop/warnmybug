@@ -15,6 +15,9 @@ pt-BR:
     reset_password_instructions:
       body: "Alguém requisitou um link para trocar sua senha no WarnMyBug. Você pode fazer isso através do link abaixo:"
       considerations: "Se não foi você quem requisitou, por favor ignore esse e-mail."
+    notification:
+      subject: "WMB nova notificacão [%{project}] [%{type}]"
+      body: Você tem uma nova notificação no warn my bug
   title:
     login: Entrar
     send_me_reset_password_instructions: Enviar e-mail
