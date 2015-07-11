@@ -5,6 +5,11 @@ class Api::NotificationsController < ActionController::Base
   def create
     notification = @project.notifications.create(notification_params)
     
+    browser_info = BrowserInfo.new(browser_params)
+    browser_info.notification_id = notification.id
+    
+    browser_info.save
+    
     render nothing: true, status: 200
   end
   
@@ -18,4 +23,8 @@ class Api::NotificationsController < ActionController::Base
     params.require(:notification).permit(:notification_type, :message, :url)
   end
   
+  def browser_params
+    params.require(:browser_info).permit(:app_code_name, :app_name, :app_version, :cookie_enabled, 
+        :hardware_concurrency, :language, :mime_types, :online, :platform, :plugins, :product, :product_sub, :user_agent, :vendor, :vendor_sub)
+  end
 end

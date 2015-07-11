@@ -11,7 +11,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150711034541) do
+ActiveRecord::Schema.define(version: 20150711035953) do
+
+  create_table "browser_infos", force: :cascade do |t|
+    t.integer  "notification_id"
+    t.string   "app_code_name"
+    t.string   "app_name"
+    t.string   "app_version"
+    t.boolean  "cookie_enabled"
+    t.string   "hardware_concurrency"
+    t.string   "language"
+    t.text     "mime_types"
+    t.boolean  "online"
+    t.string   "platform"
+    t.text     "plugins"
+    t.string   "product"
+    t.string   "product_sub"
+    t.string   "user_agent"
+    t.string   "vendor"
+    t.string   "vendor_sub"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+  end
 
   create_table "notifications", force: :cascade do |t|
     t.integer  "project_id"
