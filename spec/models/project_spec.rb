@@ -4,4 +4,14 @@ RSpec.describe Project, type: :model do
   
   it {validate_presence_of(:name)}
   
+  describe '#before_create' do
+    
+    it 'does generate a random uid' do
+      project = Project.create(name: Faker::Name.name)
+      
+      expect(project.uid.nil?).to be_falsey
+    end
+    
+  end
+  
 end
