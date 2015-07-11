@@ -6,6 +6,7 @@ RSpec.describe ProjectsController, type: :controller do
   let!(:project) {create(:project)}
   
   before(:each) do
+    controller.request.env['HTTP_ACCEPT_LANGUAGE'] = ['en', 'pt'].sample
     sign_in user
   end
   

@@ -3,9 +3,9 @@
 	
 	<div class="form-group">
 	  <%= f.label :name %>
-	  <%= f.text_field :name, class: "form-control", placeholder: :name %>
+	  <%= f.text_field :name, class: "form-control", placeholder: t('attributes.name') %>
 	</div>
   <div class="modal-footer">
-    <%= f.submit class: "btn btn-success" %>
+    <%= f.submit t('form.save'), class: "btn btn-success" %>
   </div>
 <% end %>
