@@ -6,13 +6,23 @@ pt-BR:
   form:
     save: Salvar
     new: Novo
+    sign_up: Criar conta
+    forgot_my_password: Esqueci minha senha
+    change_my_password: Trocar minha senha
   title:
+    login: Entrar
+    send_me_reset_password_instructions: Enviar e-mail
+    registration: Nova conta
     project:
       list: Meus projetos
       edit: Editando
       new: Novo projeto
   attributes:
     name: Nome
+    email: E-mail
+    password: Senha
+    password_confirmation: Confirme sua senha
+    remember_me: Manter logado
   date:
     abbr_day_names:
     - Dom

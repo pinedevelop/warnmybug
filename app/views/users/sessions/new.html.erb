@@ -1,0 +1,18 @@
+<%= form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: "form-signin"}) do |f| %>
+
+		<h2 class="form-signin-heading"><%=t('title.login')%></h2>
+		
+		<%= f.email_field :email, autofocus: true, class: "form-control", placeholder: t('attributes.email') %>
+		
+		<%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: t('attributes.password') %>
+		
+		<div class="checkbox">
+			<label>
+				<%= f.check_box :remember_me %> <%=t('attributes.remember_me')%>
+			</label>
+		</div>
+		<button class="btn btn-lg btn-primary btn-block" type="submit"><%=t('title.login')%></button>
+		<br />
+		<%= render "users/shared/links" %>
+
+<% end %>
