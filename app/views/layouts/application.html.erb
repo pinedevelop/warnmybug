@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Warnmybug</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	<title>Warnmybug</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	<%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+	<div class="blog-masthead">
+		<div class="container">
+			<nav class="blog-nav">
+				<%= link_to "Projects", projects_path, class: "blog-nav-item active"%>
+			</nav>
+		</div>
+	</div>
+	<div class="container">
+	<%= yield %>
+	</div>
 
 </body>
 </html>
