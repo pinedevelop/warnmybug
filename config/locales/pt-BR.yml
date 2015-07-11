@@ -9,6 +9,12 @@ pt-BR:
     sign_up: Criar conta
     forgot_my_password: Esqueci minha senha
     change_my_password: Trocar minha senha
+  mailer:
+    hello: Olá
+    thanks: Obrigado
+    reset_password_instructions:
+      body: "Alguém requisitou um link para trocar sua senha no WarnMyBug. Você pode fazer isso através do link abaixo:"
+      considerations: "Se não foi você quem requisitou, por favor ignore esse e-mail."
   title:
     login: Entrar
     send_me_reset_password_instructions: Enviar e-mail
