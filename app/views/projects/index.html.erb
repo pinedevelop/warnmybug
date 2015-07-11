@@ -3,18 +3,32 @@
 	<%= link_to t('form.new'), new_project_path, class: "pull-right btn btn-default" %>
 </h3>
 <hr />
-<table class="table table-hover">
-  <thead>
-    <tr>
-      <th><%=t('attributes.name')%></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @projects.each do |project| %>
-      <tr>
-        <td><%= link_to project.name, project %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<div class="col-sm-3 col-md-3">
+	<div class="thumbnail add-project" align="center">
+		<%= link_to t('form.new'), new_project_path%>
+	</div>
+</div>
+<% @projects.each do |project| %>
+<div class="col-sm-3 col-md-3">
+	
+	<%= link_to project_path(project), class: "show-project" do %>
+	<div class="thumbnail project-item">
+		<%= project.name%> <br/>
+		<span class="badge badge-notification" title="log">
+			<%=project.notifications.log.count%>
+		</span>
+		<span class="badge badge-warn badge-notification" title="warn">
+			<%=project.notifications.warn.count%>
+		</span>
+		<span class="badge badge-error badge-notification" title="error">
+			<%=project.notifications.error.count%>
+		</span>
+		<span>
+			<span class="pull-right last-update">
+				<%= l project.updated_at, format: :short %>
+			</span>
+		</div>
+		<% end %>
+	
+	</div>
+	<% end %>

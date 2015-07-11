@@ -1,0 +1,41 @@
+/**** INDEX ****/
+
+.add-project {
+	padding:10px!important;
+	height:100px!important;
+	padding-top:35px!important;
+	font-size:16px!important;
+	background-color: #EFEFEF!important;
+	opacity: 0.6;
+	box-shadow: 5px 5px 5px #EFEFEF;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+.last-update {
+	font-size:9px;
+	color: #999;
+	margin-top:45px;
+}
+
+.project-item {
+	padding:10px!important;
+	height:100px!important;
+	font-size:16px!important;
+	cursor:pointer!important;
+}
+
+.show-project:hover {
+	text-decoration:none;
+}
+
+.badge-notification {
+	margin-top:40px;
+}
+
+.badge-error {
+  background-color: #d43f3a!important;
+}
+
+.badge-warn {
+  background-color: #269abc!important;
+}
