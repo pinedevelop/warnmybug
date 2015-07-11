@@ -29,6 +29,8 @@ pt-BR:
     password: Senha
     password_confirmation: Confirme sua senha
     remember_me: Manter logado
+  messages:
+    never_used: Nunca foi usado
   date:
     abbr_day_names:
     - Dom
