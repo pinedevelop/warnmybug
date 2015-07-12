@@ -51,5 +51,5 @@ Você é muito bem vindo para se juntar a nós e contribuir para o projeto.
 
 Para contribuir com nosso projeto, leve em consideração alguns pontos:
 
-- Se você tiver alguma dúvida ou questão que gostaria de discturi, abra uma issue no github para podermos disctuir isso :)
+- Se você tiver alguma dúvida ou questão que gostaria de discturi, abra uma issue no github para podermos discutir isso :)
 - Nós amamos testes, nós temos uma cobertura acima de 90%, por favor seja uma boa pessoa e mantenha isso alto.
