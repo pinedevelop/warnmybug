@@ -24,6 +24,7 @@ en:
     project: Project
   menu:
     projects: Projects
+    sign_out: Sign out
   form:
     save: Save
     new: New

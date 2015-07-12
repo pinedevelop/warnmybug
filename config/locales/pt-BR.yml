@@ -3,6 +3,7 @@ pt-BR:
     project: Projeto
   menu:
     projects: Projetos
+    sign_out: Sair
   form:
     save: Salvar
     new: Novo

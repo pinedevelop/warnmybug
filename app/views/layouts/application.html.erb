@@ -12,6 +12,7 @@
 		<div class="container">
 			<nav class="blog-nav">
 				<%= link_to t('menu.projects'), projects_path, class: "blog-nav-item active"%>
+				<%= link_to(t('menu.sign_out'), destroy_user_session_path, :method => :delete, class: "blog-nav-item pull-right") %>
 			</nav>
 		</div>
 	</div>
