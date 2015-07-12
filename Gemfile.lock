@@ -78,6 +78,9 @@ GEM
     enumerate_it (1.2.8)
       activesupport (>= 3.0.0)
     erubis (2.7.0)
+    exception_notification (4.0.1)
+      actionmailer (>= 3.0.4)
+      activesupport (>= 3.0.4)
     execjs (2.5.2)
     factory_girl (4.5.0)
       activesupport (>= 3.0.0)
@@ -220,6 +223,7 @@ DEPENDENCIES
   devise
   devise_invitable
   enumerate_it
+  exception_notification
   factory_girl_rails
   faker
   jbuilder (~> 2.0)

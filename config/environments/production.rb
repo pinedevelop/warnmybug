@@ -79,4 +79,10 @@ Rails.application.configure do
   
   config.action_mailer.default_url_options = { protocol: ENV['MAILER_DEFAUL_URL_PROTOCOL'], :host => ENV['MAILER_DEFAUL_URL_HOST'] }
   config.action_mailer.asset_host = ENV['MAILER_ASSET_HOST']
+  Rails.application.config.middleware.use ExceptionNotification::Rack,
+  :email => {
+    :email_prefix => "[HUSTON WE HAVE A PROBLEM] ",
+    :sender_address => "huston #{ENV['MAILER_SENDER']}",
+    :exception_recipients => ENV['EXCEPTION_REPORTED']
+  }
 end
