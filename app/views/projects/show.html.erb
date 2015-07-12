@@ -1,5 +1,54 @@
-<h3>
-	<%=@project.name%>
-</h3>
+<div id="project-show">
+	<h3>
+		<%=@project.name%>
+	</h3>
 
-<hr />
+	<hr />
+	
+	<!-- notifications -->
+	<div>
+		<h5><%=t('title.notifications')%></h5>
+		<ul class="notifications">
+			<% @project.notifications.order(id: :desc).each do |notification| %>
+			<li>
+				<span class="badge badge-<%=notification.notification_type%>"><%=notification.notification_type%></span>
+				<%=link_to notification.url, notification.url, class: 'url'%>
+				<span class="updated-at"><%=l notification.updated_at, format: :long%></span>
+				<a href="#" class="more-info pull-right" onclick="$('div.hide').toggle()">+ Info</a>
+			</li>
+			<% end %>
+		</ul>
+	</div>
+	
+	<!-- users -->
+	<hr />
+	<div>
+		<h5><%=t('title.users')%></h5>
+		
+		<ul class="notifications">
+			<% @project.users.each do |user| %>
+			<li>
+				<%=user.email%>
+			</li>
+			<% end %>
+		</ul>
+	</div>
+	
+	<!-- setup -->
+	<hr />
+	<div>
+		<h5>Setup</h5>
+		<p class="setup">
+			<%=t('messages.setup')%>
+		</p>
+		
+		<div class="well well-lg">
+			(function(){
+				var js=document.createElement("script");js.type="text/javascript"; 
+				js.src="https://www.warnmybug.com/assets/wmb/wmb.js";
+				document.head.appendChild(js);
+				js.onreadystatechange=js.onload=function(){wmb.track('<%=@project.uid%>');};	
+			})();
+		</div>
+	</div>
+</div>

@@ -22,6 +22,8 @@ pt-BR:
     login: Entrar
     send_me_reset_password_instructions: Enviar e-mail
     registration: Nova conta
+    notifications: Notificações
+    users: Usuários
     project:
       list: Meus projetos
       edit: Editando
@@ -34,6 +36,7 @@ pt-BR:
     remember_me: Manter logado
   messages:
     never_used: Nunca foi usado
+    setup: "Para começar a receber as notificações, basta colar o javascript abaixo em sua página"
   date:
     abbr_day_names:
     - Dom

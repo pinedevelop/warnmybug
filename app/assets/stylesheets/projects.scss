@@ -39,3 +39,39 @@
 .badge-warn {
   background-color: #269abc!important;
 }
+
+
+/***** SHOW *****/
+
+#project-show {
+	
+	ul {
+		margin-top: 30px;
+		list-style: none;
+		padding-left:15px;
+	}
+	
+	ul.notifications { 
+		a.url {
+			margin-left:10px;
+		}
+		
+		a.more-info {
+			font-size:12px;
+			margin-top:6px;
+		}
+		
+		span.updated-at {
+			color: #999;
+			margin-left: 20px;
+			font-size:10px;
+		}
+		
+	}
+	
+	p.setup {
+		color: #444;
+		margin-top: 30px;
+	}
+	
+}
