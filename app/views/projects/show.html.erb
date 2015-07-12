@@ -14,7 +14,7 @@
 				<span class="badge badge-<%=notification.notification_type%>"><%=notification.notification_type%></span>
 				<%=link_to notification.url, notification.url, class: 'url'%>
 				<span class="updated-at"><%=l notification.updated_at, format: :long%></span>
-				<a href="#" class="more-info pull-right" onclick="$('div.hide').toggle()">+ Info</a>
+				<a href="#" class="more-info">+ Info</a>
 			</li>
 			<% end %>
 		</ul>

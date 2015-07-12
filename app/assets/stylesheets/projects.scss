@@ -51,6 +51,10 @@
 		padding-left:15px;
 	}
 	
+	.badge {
+		width: 45px;
+	}
+	
 	.invite-user {
 		width: 100%;
 		margin-top:30px;
@@ -69,6 +73,7 @@
 		a.more-info {
 			font-size:12px;
 			margin-top:6px;
+			margin-left: 10px;
 		}
 		
 		span.updated-at {
