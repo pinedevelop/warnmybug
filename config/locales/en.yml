@@ -20,4 +20,49 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  model:
+    project: Project
+  menu:
+    projects: Projects
+  form:
+    save: Save
+    new: New
+    sign_up: Create account
+    forgot_my_password: Forgot my password
+    change_my_password: Change my password
+    invite_user: Invite user
+    setup_my_password: Create new password
+  mailer:
+    hello: Hello
+    thanks: Thanks
+    reset_password_instructions:
+      body: "Someone has invited you to warn my bug, you can accept it through the link below."
+      considerations: "If you don't want to accept the invitation, please ignore this email."
+    notification:
+      subject: "WMB new notification [%{project}] [%{type}]"
+      body: You have a new notification at warn my bug
+    invite:
+      invitation_instructions:
+        someone_invited_you: "Someone has invited you to join Warn my bug"
+        accept: Click here to accept and create a password.
+        ignore: "If you don't want to accept the invitation, please ignore this email."
+  title:
+    login: Login
+    send_me_reset_password_instructions: Send e-mail
+    registration: New account
+    notifications: Notifications
+    users: Users
+    project:
+      list: My projects
+      edit: Edit
+      new: New project
+  attributes:
+    name: Name
+    email: E-mail
+    password: Password
+    password_confirmation: Password confirmation
+    remember_me: Remember me
+  messages:
+    never_used: Never used
+    setup: "To start receive notifications, paste the js at your webpage"
+
