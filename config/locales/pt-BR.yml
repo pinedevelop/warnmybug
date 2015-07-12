@@ -9,6 +9,7 @@ pt-BR:
     sign_up: Criar conta
     forgot_my_password: Esqueci minha senha
     change_my_password: Trocar minha senha
+    invite_user: Convidar usuário
   mailer:
     hello: Olá
     thanks: Obrigado

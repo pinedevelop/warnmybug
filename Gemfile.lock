@@ -67,6 +67,9 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    devise_invitable (1.4.2)
+      actionmailer (>= 3.2.6, < 5)
+      devise (>= 3.2.0)
     diff-lcs (1.2.5)
     docile (1.1.3)
     enumerate_it (1.2.6)
@@ -209,6 +212,7 @@ DEPENDENCIES
   database_cleaner
   delayed_job_active_record
   devise
+  devise_invitable
   enumerate_it
   factory_girl_rails
   faker
