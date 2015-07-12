@@ -34,6 +34,7 @@ Você pode clonar o projeto e fazer deploy usando sua infraestrutura, ou se pref
 ## Contributing
 
 We will love if you wanna help us to make the warnmybug a great project.
+
 We have a lot of work to do, features to implement, ideas to think about, you are very welcome to join us and contribute with the project.
 
 to contribute with our project, take some considerations:
@@ -43,7 +44,8 @@ to contribute with our project, take some considerations:
 
 ***
 
-Nós vamos amar se você nos ajudar a transformar o warnmybug em um grande projeto
+Nós vamos amar se você nos ajudar a transformar o warnmybug em um grande projeto.
+
 Nós temos um monte de trabalho para fazer, funcionalidades para implementar, ideias para pensar.
 Você é muito bem vindo para se juntar a nós e contribuir para o projeto.
 
