@@ -10,7 +10,7 @@ RSpec.describe NotificationMailer, type: :mailer do
     let(:mail) { NotificationMailer.notify(user, notification) }
  
     it 'renders the subject' do
-      expect(mail.subject).to eql("WMB nova notificacão [#{notification.project.name}] [log]")
+      expect(mail.subject).to include("[#{notification.project.name}] [log]")
     end
  
     it 'renders the receiver email' do
