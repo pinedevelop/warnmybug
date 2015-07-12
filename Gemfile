@@ -42,6 +42,5 @@ gem 'letter_opener', :group => :development
 gem 'delayed_job_active_record'
 gem 'devise_invitable'
 gem 'daemons'
-gem 'rack-cors', :require => 'rack/cors'gem 'daemons'
+gem 'rack-cors', :require => 'rack/cors'
 gem 'codeclimate-test-reporter', group: :test, require: nil
-
