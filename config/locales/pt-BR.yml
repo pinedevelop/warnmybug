@@ -10,6 +10,7 @@ pt-BR:
     forgot_my_password: Esqueci minha senha
     change_my_password: Trocar minha senha
     invite_user: Convidar usuário
+    setup_my_password: Criar minha senha
   mailer:
     hello: Olá
     thanks: Obrigado
@@ -19,6 +20,11 @@ pt-BR:
     notification:
       subject: "WMB nova notificacão [%{project}] [%{type}]"
       body: Você tem uma nova notificação no warn my bug
+    invite:
+      invitation_instructions:
+        someone_invited_you: "Alguém convidou você a participar do Warn my bug"
+        accept: Clique aqui para aceitar e configurar sua senha.
+        ignore: "Caso não deseje aceitar, por favor ignore este e-mail"
   title:
     login: Entrar
     send_me_reset_password_instructions: Enviar e-mail

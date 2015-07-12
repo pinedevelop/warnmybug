@@ -1,0 +1,14 @@
+<%= form_for resource, :as => resource_name, :url => invitation_path(resource_name), :html => { :method => :put, class: "form-signin" } do |f| %>
+  <%= devise_error_messages! %>
+	
+  <%= f.hidden_field :invitation_token %>
+
+	<h2 class="form-signin-heading"><%=t('form.setup_my_password')%></h2>
+	
+  <%= f.password_field :password, autofocus: true, autocomplete: "off", class: "form-control", placeholder: t('attributes.password') %>
+
+  <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control", placeholder: t('attributes.password_confirmation') %>
+	
+	<br />
+  <button class="btn btn-lg btn-primary btn-block" type="submit"><%=t('form.save')%></button>
+<% end %>
