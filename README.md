@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/pinedevelop/warnmybug.svg?branch=master)](https://travis-ci.org/pinedevelop/warnmybug) [![Code Climate](https://codeclimate.com/github/pinedevelop/warnmybug/badges/gpa.svg)](https://codeclimate.com/github/pinedevelop/warnmybug) [![Test Coverage](https://codeclimate.com/github/pinedevelop/warnmybug/badges/coverage.svg)](https://codeclimate.com/github/pinedevelop/warnmybug/coverage)
 # warnmybug
 
-Warnmybug is an amazing free and open source project that help you take care with your javascript log's/error/warnings.
+Warnmybug is an amazing free and open source project that help you take care with your javascript log's/error/warnings happens on client browser.
 
 - Create a projects
 - Copy project js snipet and paste at your project
@@ -11,7 +11,7 @@ Warnmybug is an amazing free and open source project that help you take care wit
 	
 ***
 
-Warnmybug é um projeto, free e de código aberto que ajuda os seus usuários a cuidar dos logs/erros/warnings de javascript.
+Warnmybug é um projeto, free e de código aberto que ajuda os seus usuários a cuidar dos logs/erros/warnings de javascript que ocorrem no browser dos clientes.
 
 - Crie um projeto
 - Copie o snipet javascript gerado e cole no seu projeto
