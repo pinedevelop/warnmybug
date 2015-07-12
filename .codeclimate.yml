@@ -12,4 +12,5 @@ ratings:
   - "app/**"
   - Gemfile.lock
 exclude_paths:
+- "bin/*"
 - "spec/*"
