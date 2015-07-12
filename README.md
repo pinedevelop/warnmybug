@@ -3,11 +3,11 @@
 
 Warnmybug is an amazing free and open source project that help you take care with your javascript log's/error/warnings.
 
-  - Create lots of projects
-  - Copy our js snipet and paste at your project
-	- Invite other user’s
-  - Receive through e-mail all logs/errors/warnings that happens on yours clients browser
-	- See all at our web page
+- Create lots of projects
+- Copy our js snipet and paste at your project
+- Invite other user’s
+- Receive through e-mail all logs/errors/warnings that happens on yours clients browser
+- See all at our web page
 	
 	
 ## Usage
@@ -22,5 +22,5 @@ We will love if you wanna help us to make the warnmybug a great project.
 
 to contribute with our project, take some considerations:
 
-  - If you have any question or anything you wanna discuss, please, open a github issue and let's discuss that
-	- We love tests and we have up to 90% covered, please be a good person and keep it high
+- If you have any question or anything you wanna discuss, please, open a github issue and let's discuss that
+- We love tests and we have up to 90% covered, please be a good person and keep it high
