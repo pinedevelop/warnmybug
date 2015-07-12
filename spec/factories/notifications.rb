@@ -5,5 +5,4 @@ FactoryGirl.define do
     message { Faker::Lorem.sentence }
     url { Faker::Internet.url }
   end
-
 end
