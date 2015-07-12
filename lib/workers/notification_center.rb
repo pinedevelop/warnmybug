@@ -7,4 +7,6 @@ class NotificationCenter
     end
     
   end
+  
+  handle_asynchronously :notify
 end

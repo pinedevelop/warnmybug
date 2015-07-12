@@ -39,3 +39,4 @@ gem 'devise'
 gem 'enumerate_it'
 gem 'non-stupid-digest-assets'
 gem 'letter_opener', :group => :development
+gem 'delayed_job_active_record'
