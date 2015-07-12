@@ -9,10 +9,25 @@ Warnmybug is an amazing free and open source project that help you take care wit
 - Receive through e-mail all logs/errors/warnings that happens on yours clients browser
 - See notifications/reports/statistics at project web page
 	
-	
+***
+
+Warnmybug é um projeto, free e de código aberto que ajuda os seus usuários a cuidar dos logs/erros/warnings de javascript.
+
+- Crie um projeto
+- Copie o snipet javascript gerado e cole no seu projeto
+- Convide outros usuários
+- Receba através de e-mail todos os logs/erros/warnings que acontecerem nos browsers de seus clientes
+- Acompanhe as notificações/relatórios/estatisticas na página do projeto
+
 ## Usage
 
 You can clone the git repository and deploy it on your environment or feel free to use our infrastructure at
+
+`https://warnmybug.com`
+
+***
+
+Você pode clonar o projeto e fazer deploy usando sua infraestrutura, ou se preferir, é bem vindo a usar a nossa:
 
 `https://warnmybug.com`
 
@@ -22,5 +37,14 @@ We will love if you wanna help us to make the warnmybug a great project.
 
 to contribute with our project, take some considerations:
 
-- If you have any question or anything you wanna discuss, please, open a github issue and let's discuss that
+- If you have any question or anything you wanna discuss, please, open a github issue and let's discuss that :)
 - We love tests and we have up to 90% covered, please be a good person and keep it high
+
+***
+
+Nós vamos amar se você nos ajudar a transformar o warnmybug em um grande projeto
+
+Para contribuir com nosso projeto, leve em consideração alguns pontos:
+
+- Se você tiver alguma dúvida ou questão que gostaria de discturi, abra uma issue no github para podermos disctuir isso :)
+- Nós amamos testes, nós temos uma cobertura acima de 90%, por favor seja uma boa pessoa e mantenha isso alto.
