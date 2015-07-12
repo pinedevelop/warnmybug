@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-
 gem 'rails', '4.2.3'
 
 gem 'sqlite3'
@@ -38,10 +37,10 @@ gem 'bower-rails'
 gem 'devise'
 gem 'enumerate_it'
 gem 'non-stupid-digest-assets'
-gem 'letter_opener', :group => :development
+gem 'letter_opener', group: :development
 gem 'delayed_job_active_record'
 gem 'devise_invitable'
 gem 'daemons'
-gem 'rack-cors', :require => 'rack/cors'
+gem 'rack-cors', require: 'rack/cors'
 gem 'codeclimate-test-reporter', group: :test, require: nil
 gem 'exception_notification'

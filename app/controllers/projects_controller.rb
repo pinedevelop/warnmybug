@@ -20,12 +20,11 @@ class ProjectsController < ApplicationController
 
     if @project.save
       @project.users << current_user
-      
+
       redirect_to @project
     else
       render :new
     end
-
   end
 
   def update

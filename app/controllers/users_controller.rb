@@ -4,9 +4,9 @@ class UsersController < ApplicationController
   def create
     user = User.find_by_email(params[:user][:email])
     user = User.invite!(email: params[:user][:email]) unless user
-    
+
     user.projects << @project unless @project.users.exists?(id: user.id)
-    
+
     redirect_to @project
   end
 

@@ -1,0 +1,13 @@
+AllCops:
+  RunRailsCops: true
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  Exclude:
+    - 'bin/**/*'
+    - 'config/**/*'
+    - 'db/**/*'
+    - 'tmp/**/*'
+    - 'vendor/**/*'
+
+Style/Documentation:
+  Enabled: false
