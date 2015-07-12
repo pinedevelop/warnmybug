@@ -53,6 +53,7 @@ GEM
       execjs
     coffee-script-source (1.9.1.1)
     columnize (0.9.0)
+    daemons (1.2.2)
     database_cleaner (1.4.0)
     debug_inspector (0.0.2)
     delayed_job (4.0.6)
@@ -209,6 +210,7 @@ DEPENDENCIES
   bower-rails
   byebug
   coffee-rails (~> 4.1.0)
+  daemons
   database_cleaner
   delayed_job_active_record
   devise
