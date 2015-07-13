@@ -12,5 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require best_in_place
 //= require turbolinks
 //= require bootstrap/dist/js/bootstrap
+
+//= require onload.actions

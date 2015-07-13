@@ -3,7 +3,9 @@ class ApplicationController < ActionController::Base
 
   before_action :authenticate_user!
   before_action :set_locale
-
+  
+  respond_to :html, :json
+    
   def set_locale
     I18n.locale = extract_locale_from_accept_language_header
   end
