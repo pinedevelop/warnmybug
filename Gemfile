@@ -44,3 +44,4 @@ gem 'daemons'
 gem 'rack-cors', require: 'rack/cors'
 gem 'codeclimate-test-reporter', group: :test, require: nil
 gem 'exception_notification'
+gem 'best_in_place'
