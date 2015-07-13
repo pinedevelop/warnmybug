@@ -1,0 +1,5 @@
+$('body').prepend("<%=j render('show')%>");
+$('#show-notification').modal('show');
+$('#show-notification').on('hidden.bs.modal', function() {
+	$('#show-notification').remove();
+});

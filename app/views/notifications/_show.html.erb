@@ -1,0 +1,50 @@
+<div class="modal fade" id="show-notification">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <span class="modal-title"><%=@notification.url%></span>
+      </div>
+      <div class="modal-body">
+				<div>
+				  <ul class="nav nav-tabs" role="tablist">
+				    <li role="presentation" class="active"><a href="#stack-trace" aria-controls="stack-trace" role="tab" data-toggle="tab">Stack Trace</a></li>
+				    <li role="presentation"><a href="#browser-info" aria-controls="browser-info" role="tab" data-toggle="tab">Browser Info</a></li>
+				  </ul>
+
+				  <div class="tab-content">
+				    <div role="tabpanel" class="tab-pane active" id="stack-trace">
+							<div align="center">
+								<b>Stack Trace</b>
+							</div>
+							<div class="container">
+								<%=@notification.message%>
+							</div>
+				    </div>
+				    <div role="tabpanel" class="tab-pane" id="browser-info">
+							<div align="center">
+								<b>Browser Info</b>
+							</div>
+							<p><b>App code name:</b> <%=@notification.browser_info.app_code_name%></p>
+							<p><b>App name:</b> <%=@notification.browser_info.app_name%></p>
+							<p><b>App version:</b> <%=@notification.browser_info.app_version%></p>
+							<p><b>Cookie enabled:</b> <%=@notification.browser_info.cookie_enabled%></p>
+							<p><b>Hardware Concurrency:</b> <%=@notification.browser_info.hardware_concurrency%></p>
+							<p><b>Language:</b> <%=@notification.browser_info.language%></p>
+							<p><b>Mime Types:</b> <%=@notification.browser_info.mime_types%></p>
+							<p><b>Online:</b> <%=@notification.browser_info.online%></p>
+							<p><b>Platform:</b> <%=@notification.browser_info.platform%></p>
+							<p><b>Plugins:</b> <%=@notification.browser_info.plugins%></p>
+							<p><b>Product:</b> <%=@notification.browser_info.product%></p>
+							<p><b>Product sub:</b> <%=@notification.browser_info.product_sub%></p>
+							<p><b>User agent:</b> <%=@notification.browser_info.user_agent%></p>
+							<p><b>Vendor:</b> <%=@notification.browser_info.vendor%></p>
+							<p><b>Vendor sub:</b> <%=@notification.browser_info.vendor_sub%></p>
+				    </div>
+				  </div>
+
+				</div>
+      </div>
+    </div>
+  </div>
+</div>
