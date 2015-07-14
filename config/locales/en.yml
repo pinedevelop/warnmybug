@@ -22,6 +22,7 @@
 en:
   model:
     project: Project
+    environment: Environment
   menu:
     projects: Projects
     sign_out: Sign out
@@ -40,7 +41,7 @@ en:
       body: "Someone has invited you to warn my bug, you can accept it through the link below."
       considerations: "If you don't want to accept the invitation, please ignore this email."
     notification:
-      subject: "WMB new notification [%{project}] [%{type}]"
+      subject: "WMB new notification [%{project}] [%{environment}] [%{type}]"
       body: You have a new notification at warn my bug
     invite:
       invitation_instructions:
@@ -63,6 +64,7 @@ en:
     password: Password
     password_confirmation: Password confirmation
     remember_me: Remember me
+    notification_type: Notification type
   messages:
     never_used: Never used
     setup: "To start receive notifications, paste the js at your webpage"

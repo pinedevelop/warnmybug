@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe NotificationCenter do
   let(:user) { create(:user) }
   let(:project) { create(:project) }
-  let(:notification) { create(:notification, project: project) }
+  let(:notification) { create(:notification, environment: project.environment) }
   let!(:browser_info) { create(:browser_info, notification: notification) }
 
   before(:each) do

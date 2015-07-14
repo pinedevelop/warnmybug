@@ -4,8 +4,10 @@ Rails.application.routes.draw do
   devise_for :users
   
   resources :projects do
+    resources :environments, only: [:show] do
+      resources :notifications, only: [:show]
+    end
     resources :users, only: [:create]
-    resources :notifications, only: [:show]
   end
 
   namespace :api do

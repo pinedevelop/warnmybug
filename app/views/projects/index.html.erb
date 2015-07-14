@@ -10,24 +10,19 @@
 <% @projects.each do |project| %>
 <div class="col-sm-3 col-md-3">
 	
-	<%= link_to project_path(project), class: "show-project" do %>
-	<div class="thumbnail project-item">
-		<%= project.name%> <br/>
-		<span class="badge badge-notification" title="log">
-			<%=project.notifications.log.count%>
-		</span>
-		<span class="badge badge-warn badge-notification" title="warn">
-			<%=project.notifications.warn.count%>
-		</span>
-		<span class="badge badge-error badge-notification" title="error">
-			<%=project.notifications.error.count%>
-		</span>
-		<span>
-			<span class="pull-right last-update">
-				<%= last_update_to(project) %>
-			</span>
+	<%= link_to project_environment_path(project, project.environment), class: "show-project" do %>
+		<div class="thumbnail project-item">
+			<%= project.name%> <br/>
+			<% project.environments.limit(3).each do |env| %>
+				<div class="env-data">
+					<span class="env-name"><%=env.name%></span>
+					<span class="pull-right last-update">
+						<%= last_update_to(env) %>
+					</span>
+				</div>
+			<% end %>
 		</div>
-		<% end %>
-	
-	</div>
 	<% end %>
+	
+</div>
+<% end %>

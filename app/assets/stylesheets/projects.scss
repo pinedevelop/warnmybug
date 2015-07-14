@@ -11,10 +11,18 @@
   filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
+.env-data {
+	margin-top: 10px;
+}
+.env-name {
+	font-size:12px;
+	color: #999;
+}
+
 .last-update {
 	font-size:9px;
 	color: #999;
-	margin-top:45px;
+	margin-top:9px;
 }
 
 .project-item {
@@ -45,7 +53,7 @@
 
 #project-show {
 	
-	ul {
+	ul.notifications {
 		margin-top: 30px;
 		list-style: none;
 		padding-left:15px;

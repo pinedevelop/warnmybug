@@ -1,6 +1,7 @@
 pt-BR:
   model:
     project: Projeto
+    environment: Ambiente
   menu:
     projects: Projetos
     sign_out: Sair
@@ -19,7 +20,7 @@ pt-BR:
       body: "Alguém requisitou um link para trocar sua senha no WarnMyBug. Você pode fazer isso através do link abaixo:"
       considerations: "Se não foi você quem requisitou, por favor ignore esse e-mail."
     notification:
-      subject: "WMB nova notificacão [%{project}] [%{type}]"
+      subject: "WMB nova notificacão [%{project}] [%{environment}] [%{type}]"
       body: Você tem uma nova notificação no warn my bug
     invite:
       invitation_instructions:
@@ -42,6 +43,7 @@ pt-BR:
     password: Senha
     password_confirmation: Confirme sua senha
     remember_me: Manter logado
+    notification_type: Tipo de notificação
   messages:
     never_used: Nunca foi usado
     setup: "Para começar a receber as notificações, basta colar o javascript abaixo em sua página"

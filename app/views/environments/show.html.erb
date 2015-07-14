@@ -1,20 +1,32 @@
 <div id="project-show">
 	<h3>
 		<%= best_in_place @project, :name%>
+		<div class="dropdown pull-right">
+		  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+		    <%=@environment.name%>
+		    <span class="caret"></span>
+		  </button>
+			<!-- TODO -->
+		  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+		    <!--li role="separator" class="divider"></li-->
+				<li><a href="#">New env</a></li>
+		  </ul>
+		</div>
 	</h3>
-
+	
 	<hr />
 	
 	<!-- notifications -->
 	<div>
 		<h5><%=t('title.notifications')%></h5>
 		<ul class="notifications">
-			<% @project.notifications.order(id: :desc).each do |notification| %>
+			<% @environment.notifications.order(id: :desc).each do |notification| %>
 			<li>
 				<span class="badge badge-<%=notification.notification_type%>"><%=notification.notification_type%></span>
 				<%=link_to notification.url, notification.url, class: 'url'%>
 				<span class="updated-at"><%=l notification.updated_at, format: :long%></span>
-				<%=link_to "+ Info", project_notification_path(@project, notification), remote: true, class: "more-info"%>
+				<%=link_to "+ Info", project_environment_notification_path(@project, @environment, notification),
+					 remote: true, class: "more-info"%>
 			</li>
 			<% end %>
 		</ul>
@@ -52,7 +64,7 @@
 				var js=document.createElement("script");js.type="text/javascript"; 
 				js.src="https://www.warnmybug.com/assets/wmb/wmb.js";
 				document.head.appendChild(js);
-				js.onreadystatechange=js.onload=function(){wmb.track('<%=@project.uid%>');};	
+				js.onreadystatechange=js.onload=function(){wmb.track('<%=@environment.uid%>');};	
 			})();
 		</div>
 	</div>

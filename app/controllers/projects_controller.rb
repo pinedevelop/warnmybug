@@ -1,11 +1,8 @@
 class ProjectsController < ApplicationController
-  before_action :set_project, only: [:show, :edit, :update, :destroy]
+  before_action :set_project, only: [:edit, :update, :destroy]
 
   def index
     @projects = current_user.projects.all
-  end
-
-  def show
   end
 
   def new
@@ -21,7 +18,7 @@ class ProjectsController < ApplicationController
     if @project.save
       @project.users << current_user
 
-      redirect_to @project
+      redirect_to project_environment_path(@project, @project.environment)
     else
       render :new
     end

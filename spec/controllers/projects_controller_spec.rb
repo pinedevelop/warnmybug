@@ -17,13 +17,6 @@ RSpec.describe ProjectsController, type: :controller do
     end
   end
 
-  describe 'GET #show' do
-    it 'assigns the requested project as @project' do
-      get :show, id: project.to_param
-      expect(assigns(:project)).to eq(project)
-    end
-  end
-
   describe 'GET #new' do
     it 'assigns a new project as @project' do
       get :new
@@ -57,7 +50,7 @@ RSpec.describe ProjectsController, type: :controller do
 
       it 'redirects to the created project' do
         post :create, project: valid_attributes
-        expect(response).to redirect_to(Project.last)
+        expect(response).to redirect_to(project_environment_path(Project.last, Project.last.environment))
       end
     end
 
