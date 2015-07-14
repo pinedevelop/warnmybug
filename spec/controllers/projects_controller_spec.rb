@@ -50,7 +50,7 @@ RSpec.describe ProjectsController, type: :controller do
 
       it 'redirects to the created project' do
         post :create, project: valid_attributes
-        expect(response).to redirect_to(Project.last)
+        expect(response).to redirect_to(project_environment_path(Project.last, Project.last.environment))
       end
     end
 

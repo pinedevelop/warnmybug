@@ -1,8 +1,19 @@
 <div id="project-show">
 	<h3>
-		<%= best_in_place @project, :name%> - <%=@environment.name%>
+		<%= best_in_place @project, :name%>
+		<div class="dropdown pull-right">
+		  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+		    <%=@environment.name%>
+		    <span class="caret"></span>
+		  </button>
+			<!-- TODO -->
+		  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+		    <!--li role="separator" class="divider"></li-->
+				<li><a href="#">New env</a></li>
+		  </ul>
+		</div>
 	</h3>
-
+	
 	<hr />
 	
 	<!-- notifications -->
