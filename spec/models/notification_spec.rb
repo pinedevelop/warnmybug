@@ -1,10 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe Notification, type: :model do
-  it { belong_to :project }
+  it { belong_to :environment }
   it { have_many :browser_info }
   it { validate_presence_of :name }
-  it { validate_presence_of :project_id }
+  it { validate_presence_of :environment_id }
 
   describe '#notify' do
     let(:notification) { create(:notification) }

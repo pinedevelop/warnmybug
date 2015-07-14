@@ -3,6 +3,7 @@ class NotificationMailer < ApplicationMailer
     @user = user
     @notification = notification
 
-    mail(to: user.email, subject: I18n.t('mailer.notification.subject', project: notification.project.name, type: notification.notification_type))
+    mail(to: user.email, subject: I18n.t('mailer.notification.subject', 
+      project: notification.environment.project.name, type: notification.notification_type, environment: notification.environment.name))
   end
 end

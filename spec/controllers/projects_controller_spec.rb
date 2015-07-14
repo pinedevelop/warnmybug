@@ -17,13 +17,6 @@ RSpec.describe ProjectsController, type: :controller do
     end
   end
 
-  describe 'GET #show' do
-    it 'assigns the requested project as @project' do
-      get :show, id: project.to_param
-      expect(assigns(:project)).to eq(project)
-    end
-  end
-
   describe 'GET #new' do
     it 'assigns a new project as @project' do
       get :new

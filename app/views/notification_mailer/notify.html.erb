@@ -1,7 +1,13 @@
 <p><%=t('mailer.notification.body')%></p>	
 <br />
 
-<%=@notification.project.name%> (<%=@notification.url%>)
+<%=@notification.environment.project.name%> <br />
+<br /><br />
+<b><%=t('model.environment')%>:</b> <br />
+<%=@notification.environment.name%>
+<br /><br />
+<b><%=t('attributes.notification_type')%>:</b> <br />
+<%=@notification.notification_type%>
 <br /><br />
 <b>Stack Trace:</b> <br />
 <%=@notification.message%>

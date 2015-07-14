@@ -1,7 +1,7 @@
 module ProjectsHelper
-  def last_update_to(project)
-    if project.notifications.any?
-      l project.notifications.last.updated_at, format: :short
+  def last_update_to(env)
+    if env.notifications.any?
+      l env.notifications.last.updated_at, format: :short
     else
       t('messages.never_used')
     end

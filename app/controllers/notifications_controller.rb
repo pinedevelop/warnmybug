@@ -1,13 +1,13 @@
 class NotificationsController < ApplicationController
-  before_action :set_project
+  before_action :set_environment
 
   def show
-    @notification = @project.notifications.find(params[:id])
+    @notification = @environment.notifications.find(params[:id])
   end
 
   private
 
-  def set_project
-    @project = current_user.projects.find(params[:project_id])
+  def set_environment
+    @environment = current_user.projects.find(params[:project_id]).environments.find(params[:environment_id])
   end
 end

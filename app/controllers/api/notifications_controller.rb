@@ -2,7 +2,7 @@ class Api::NotificationsController < ActionController::Base
   before_action :set_tenant
 
   def create
-    notification = @project.notifications.create(notification_params)
+    notification = @environment.notifications.create(notification_params)
 
     browser_info = BrowserInfo.new(browser_params)
     browser_info.notification_id = notification.id
@@ -15,7 +15,7 @@ class Api::NotificationsController < ActionController::Base
   private
 
   def set_tenant
-    @project = Project.find_by_uid(params[:uid])
+    @environment = Environment.find_by_uid(params[:uid])
   end
 
   def notification_params
