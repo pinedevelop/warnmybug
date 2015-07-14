@@ -53,3 +53,37 @@ Para contribuir com nosso projeto, leve em consideração alguns pontos:
 
 - Se você tiver alguma dúvida ou questão que gostaria de discturi, abra uma issue no github para podermos discutir isso :)
 - Nós amamos testes, nós temos uma cobertura acima de 90%, por favor seja uma boa pessoa e mantenha isso alto.
+
+### Run locally
+
+To run WMB at your local env you will need have installed
+
+- Ruby
+- Node
+- Bower
+
+and execute these commands at your terminal
+
+- `bundle`
+- `rake bower:install`
+- `rake db:migrate db:seed`
+- `rails s`
+
+after these commands you will be able to access `http://localhost:3000` and enter with `admin@admin.com` password: `admin123456`
+
+***
+
+Para rodar o WMB no seu ambiente local você precisa ter instalado
+
+- Ruby
+- Node
+- Bower
+
+e executar estes comandos no seu terminal
+
+- `bundle`
+- `rake bower:install`
+- `rake db:migrate db:seed`
+- `rails s`
+
+após estes comandos você deverá poder acessar `http://localhost:3000` e usar o usuário: `admin@admin.com` senha: `admin123456`
