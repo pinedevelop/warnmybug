@@ -33,6 +33,8 @@ pt-BR:
     registration: Nova conta
     notifications: Notificações
     users: Usuários
+    env_preferences: Preferências (ambiente)
+    my_preferences: Preferências (pessoais)
     project:
       list: Meus projetos
       edit: Editando

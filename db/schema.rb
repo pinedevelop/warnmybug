@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150714024823) do
+ActiveRecord::Schema.define(version: 20150715200805) do
 
   create_table "browser_infos", force: :cascade do |t|
     t.integer  "notification_id"
@@ -49,6 +49,15 @@ ActiveRecord::Schema.define(version: 20150714024823) do
   end
 
   add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority"
+
+  create_table "environment_preferences", force: :cascade do |t|
+    t.integer  "environment_id"
+    t.boolean  "log"
+    t.boolean  "warn"
+    t.boolean  "error"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
 
   create_table "environments", force: :cascade do |t|
     t.integer  "project_id"

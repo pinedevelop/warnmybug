@@ -7,7 +7,7 @@ class UsersController < ApplicationController
 
     user.projects << @project unless @project.users.exists?(id: user.id)
 
-    redirect_to @project
+    redirect_to project_environment_path(@project, @project.environment)
   end
 
   private

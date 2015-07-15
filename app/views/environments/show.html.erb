@@ -53,6 +53,42 @@
 	
 	<!-- setup -->
 	<hr />
+	<div class='row'>
+		<div class='col-sm-6'>
+			<h5><%=t('title.env_preferences')%></h5>
+			<p>
+				<%=form_for([@project, @environment, @environment.environment_preference]) do |f| %>
+					<br />
+					<b>Track</b> <br /><br />
+					
+					<%=f.check_box :log %> <%=f.label :log%><br />
+					
+					<%=f.check_box :warn %> <%=f.label :warn%><br />
+					
+					<%=f.check_box :error %> <%=f.label :error%><br />
+					
+					<br />
+					<%=f.submit t('form.save'), class: 'btn btn-default'%>
+
+				<% end %>
+			</p>
+		
+			
+		</div>
+	
+		<div class='col-sm-6'>
+			<h5><%=t('title.my_preferences')%></h5>
+			<p class="setup">
+			</p>
+		
+		
+		</div>
+	</div>
+	
+	
+	<!-- setup -->
+	<div class="clear-both"></div>
+	<hr />
 	<div>
 		<h5>Setup</h5>
 		<p class="setup">
