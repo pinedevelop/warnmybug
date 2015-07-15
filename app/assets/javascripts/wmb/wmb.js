@@ -22,6 +22,7 @@ wmb.track = function(uid) {
 }
 
 wmb.notify = function(type, arguments) {
+	if(!wmb.uid) { return; }
 	var xhr = new XMLHttpRequest();
 	
 	xhr.open('POST', encodeURI(wmb.url));
