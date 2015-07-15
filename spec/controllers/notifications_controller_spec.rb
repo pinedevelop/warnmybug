@@ -6,7 +6,6 @@ RSpec.describe NotificationsController, type: :controller do
   let!(:notification) { create(:notification, environment_id: project.environment.id) }
 
   before(:each) do
-    controller.request.env['HTTP_ACCEPT_LANGUAGE'] = %w(en pt).sample
     user.projects << project
     sign_in user
   end

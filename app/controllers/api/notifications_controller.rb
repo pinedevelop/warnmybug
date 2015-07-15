@@ -9,13 +9,14 @@ class Api::NotificationsController < ActionController::Base
 
     browser_info.save
 
-    render nothing: true, status: 200
+    render nothing: true, status: 201
   end
 
   private
 
   def set_tenant
     @environment = Environment.find_by_uid(params[:uid])
+    render nothing: true, status: 200 && false unless @environment
   end
 
   def notification_params
