@@ -61,6 +61,8 @@ en:
       list: My projects
       edit: Edit
       new: New project
+    environment:
+      new: New environment
   attributes:
     name: Name
     email: E-mail
