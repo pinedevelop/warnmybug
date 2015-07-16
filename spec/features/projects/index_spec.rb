@@ -12,7 +12,7 @@ RSpec.describe "Project index", type: :feature, js: true do
     
 
   describe "layout" do
-    it "does have title" do
+    xit "does have title" do
       within "h3" do
         expect(page).to have_content("Meus projetos")
       end
@@ -30,7 +30,7 @@ RSpec.describe "Project index", type: :feature, js: true do
     
     describe 'when click new' do
     
-      it "does send to projects form" do
+      xit "does send to projects form" do
         click_link 'Novo'
         expect(page).to have_content("Novo projeto")
       end
@@ -38,7 +38,7 @@ RSpec.describe "Project index", type: :feature, js: true do
     end
     
     describe 'project list' do
-      it 'does display associated user projects' do
+      xit 'does display associated user projects' do
         expect(page).to have_selector('.thumbnail', count: 4)
       end
     end
