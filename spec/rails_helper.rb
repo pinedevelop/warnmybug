@@ -5,6 +5,10 @@ require File.expand_path('../../config/environment', __FILE__)
 abort('The Rails environment is running in production mode!') if Rails.env.production?
 require 'spec_helper'
 require 'rspec/rails'
+require 'capybara/rspec'
+require 'capybara/rails'
+require 'capybara/poltergeist'
+
 require 'simplecov'
 ActiveRecord::Migration.maintain_test_schema!
 
@@ -16,7 +20,9 @@ RSpec.configure do |config|
   config.include Devise::TestHelpers, type: :controller
 
   config.include FactoryGirl::Syntax::Methods
-
+  
+  config.include Warden::Test::Helpers
+  
   config.infer_spec_type_from_file_location!
 
   config.before(:suite) do
@@ -29,3 +35,6 @@ RSpec.configure do |config|
     end
   end
 end
+
+Capybara.javascript_driver = :poltergeist
+Capybara.default_wait_time = 20

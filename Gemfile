@@ -29,6 +29,8 @@ group :development, :test do
   gem 'simplecov', require: false
   gem 'shoulda-matchers'
   gem 'database_cleaner'
+  gem 'capybara'
+  gem 'poltergeist'
 end
 
 gem 'web-console', group: :development
