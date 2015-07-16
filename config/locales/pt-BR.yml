@@ -35,6 +35,7 @@ pt-BR:
     users: Usuários
     env_preferences: Preferências (ambiente)
     my_preferences: Preferências (pessoais)
+    notification_preference: Quero receber notificações por
     project:
       list: Meus projetos
       edit: Editando

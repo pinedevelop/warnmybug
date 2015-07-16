@@ -17,6 +17,7 @@ class ProjectsController < ApplicationController
 
     if @project.save
       @project.users << current_user
+      UserPreference.create_default!(current_user.id, @project.environment.id)
 
       redirect_to project_environment_path(@project, @project.environment)
     else

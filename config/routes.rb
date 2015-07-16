@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     resources :environments, only: [:show] do
       resources :notifications, only: [:show]
       resources :environment_preferences, only: [:update]
+      resources :user_preferences, only: [:update]
     end
     resources :users, only: [:create]
   end

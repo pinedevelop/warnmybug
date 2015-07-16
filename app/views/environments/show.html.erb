@@ -78,8 +78,17 @@
 	
 		<div class='col-sm-6'>
 			<h5><%=t('title.my_preferences')%></h5>
-			<p class="setup">
-			</p>
+			<br />
+			<%=form_for([@project, @environment, current_user.preference(@environment.id)]) do |f| %>
+				<b><%=t('title.notification_preference')%></b> <br /><br />
+				
+				<%=f.check_box :email %> <%=f.label :email%><br />
+				
+				<br /><br /><br /><br />
+				
+				<%=f.submit t('form.save'), class: 'btn btn-default'%>
+
+			<% end %>
 		
 		
 		</div>

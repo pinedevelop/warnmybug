@@ -52,6 +52,13 @@ RSpec.describe ProjectsController, type: :controller do
         post :create, project: valid_attributes
         expect(response).to redirect_to(project_environment_path(Project.last, Project.last.environment))
       end
+      
+      it 'does create new user preference' do
+        expect(UserPreference).to receive(:create_default!).once
+        
+        post :create, project: valid_attributes
+      end
+      
     end
 
     context 'with invalid params' do
