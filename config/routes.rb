@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   devise_for :users
   
   resources :projects do
-    resources :environments, only: [:show] do
+    resources :environments, only: [:show, :new, :create] do
       resources :notifications, only: [:show]
       resources :environment_preferences, only: [:update]
       resources :user_preferences, only: [:update]

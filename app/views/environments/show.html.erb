@@ -8,8 +8,15 @@
 		  </button>
 			<!-- TODO -->
 		  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-		    <!--li role="separator" class="divider"></li-->
-				<li><a href="#">New env</a></li>
+				<% @project.environments.each do |env|%>
+				<li>
+					<%=link_to(env.name, project_environment_path(@project, env)) if env.id != @environment.id%>
+				</li>
+				<% end %>
+		    <li role="separator" class="divider"></li>
+				<li>
+					<%=link_to(t('title.environment.new'), new_project_environment_path(@project))%>
+				</li>
 		  </ul>
 		</div>
 	</h3>

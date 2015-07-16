@@ -40,6 +40,8 @@ pt-BR:
       list: Meus projetos
       edit: Editando
       new: Novo projeto
+    environment:
+      new: Novo ambiente
   attributes:
     name: Nome
     email: E-mail

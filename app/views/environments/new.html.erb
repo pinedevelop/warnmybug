@@ -1,0 +1,16 @@
+<h3><%=t('title.environment.new')%></h3>
+
+<hr/>
+
+<%= form_for([@project, @environment]) do |f| %>
+	<%= render 'shared/error', object: @environment %>
+	
+	<div class="form-group">
+	  <%= f.label :name %>
+	  <%= f.text_field :name, class: "form-control", placeholder: t('attributes.name') %>
+	</div>
+  <div class="modal-footer">
+    <%= f.submit t('form.save'), class: "btn btn-success" %>
+  </div>
+<% end %>
+
