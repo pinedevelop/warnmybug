@@ -14,9 +14,15 @@ RSpec.describe UsersController, type: :controller do
     it 'does redirect to project' do
       post :create, project_id: project.id, user: { email: user.email }
 
-      expect(response).to redirect_to(project)
+      expect(response).to redirect_to(project_environment_path(project, project.environment))
     end
-
+    
+    it 'does create user preference if doesnt exists' do
+      expect(UserPreference).to receive(:create_default!).once
+      
+      post :create, project_id: project.id, user: { email: user.email}
+    end
+    
     it 'does associate project to @project' do
       post :create, project_id: project.id, user: { email: user.email }
 

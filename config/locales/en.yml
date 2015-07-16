@@ -53,6 +53,9 @@ en:
     send_me_reset_password_instructions: Send e-mail
     registration: New account
     notifications: Notifications
+    env_preferences: Preferences (environment)
+    my_preferences: Preferences (only my)
+    notification_preference: I wanna receive notifications by
     users: Users
     project:
       list: My projects

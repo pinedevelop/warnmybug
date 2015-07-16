@@ -2,13 +2,16 @@ class Api::NotificationsController < ActionController::Base
   before_action :set_tenant
 
   def create
-    notification = @environment.notifications.create(notification_params)
+    if @environment.track?(params[:notification][:notification_type])
+      
+      notification = @environment.notifications.create(notification_params)
 
-    browser_info = BrowserInfo.new(browser_params)
-    browser_info.notification_id = notification.id
+      browser_info = BrowserInfo.new(browser_params)
+      browser_info.notification_id = notification.id
 
-    browser_info.save
-
+      browser_info.save
+    end
+    
     render nothing: true, status: 200
   end
 

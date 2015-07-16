@@ -13,7 +13,9 @@ class ApplicationController < ActionController::Base
   private
 
   def extract_locale_from_accept_language_header
-    case request.env['HTTP_ACCEPT_LANGUAGE'].scan(/^[a-z]{2}/).first
+    language = request.env['HTTP_ACCEPT_LANGUAGE'] || ""
+    
+    case language.scan(/^[a-z]{2}/).first
     when 'pt'
       :'pt-BR'
     else
