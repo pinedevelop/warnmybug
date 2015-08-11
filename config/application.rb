@@ -11,6 +11,7 @@ module Warnmybug
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+    config.raw_settings = YAML.load_file(Rails.root.join("config", "application.yml"))[Rails.env]
 
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
@@ -24,7 +25,7 @@ module Warnmybug
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
     config.active_job.queue_adapter = :delayed_job
-    
+
     config.middleware.use Rack::Cors do
       allow do
         origins '*'

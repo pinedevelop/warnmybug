@@ -20,9 +20,9 @@
 		  </ul>
 		</div>
 	</h3>
-	
+
 	<hr />
-	
+
 	<!-- notifications -->
 	<div>
 		<h5><%=t('title.notifications')%></h5>
@@ -38,12 +38,12 @@
 			<% end %>
 		</ul>
 	</div>
-	
+
 	<!-- users -->
 	<hr />
 	<div>
 		<h5><%=t('title.users')%></h5>
-		
+
 		<ul class="notifications">
 			<% @project.users.each do |user| %>
 			<li>
@@ -57,7 +57,7 @@
 			</li>
 		</ul>
 	</div>
-	
+
 	<!-- setup -->
 	<hr />
 	<div class='row'>
@@ -67,41 +67,41 @@
 				<%=form_for([@project, @environment, @environment.environment_preference]) do |f| %>
 					<br />
 					<b>Track</b> <br /><br />
-					
+
 					<%=f.check_box :log %> <%=f.label :log%><br />
-					
+
 					<%=f.check_box :warn %> <%=f.label :warn%><br />
-					
+
 					<%=f.check_box :error %> <%=f.label :error%><br />
-					
+
 					<br />
 					<%=f.submit t('form.save'), class: 'btn btn-default'%>
 
 				<% end %>
 			</p>
-		
-			
+
+
 		</div>
-	
+
 		<div class='col-sm-6'>
 			<h5><%=t('title.my_preferences')%></h5>
 			<br />
 			<%=form_for([@project, @environment, current_user.preference(@environment.id)]) do |f| %>
 				<b><%=t('title.notification_preference')%></b> <br /><br />
-				
+
 				<%=f.check_box :email %> <%=f.label :email%><br />
-				
+
 				<br /><br /><br /><br />
-				
+
 				<%=f.submit t('form.save'), class: 'btn btn-default'%>
 
 			<% end %>
-		
-		
+
+
 		</div>
 	</div>
-	
-	
+
+
 	<!-- setup -->
 	<div class="clear-both"></div>
 	<hr />
@@ -110,13 +110,13 @@
 		<p class="setup">
 			<%=t('messages.setup')%>
 		</p>
-		
+
 		<div class="well well-lg">
 			(function(){
-				var js=document.createElement("script");js.type="text/javascript"; 
-				js.src="https://www.warnmybug.com/assets/wmb/wmb.js";
+				var js=document.createElement("script");js.type="text/javascript";
+				js.src="<%= Rails.configuration.raw_settings["domain"] %>/assets/wmb/wmb.js";
 				document.head.appendChild(js);
-				js.onreadystatechange=js.onload=function(){wmb.track('<%=@environment.uid%>');};	
+				js.onreadystatechange=js.onload=function(){wmb.track('<%=@environment.uid%>');};
 			})();
 		</div>
 	</div>

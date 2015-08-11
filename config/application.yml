@@ -1,0 +1,9 @@
+development:
+  domain: http://localhost:3000
+
+staging:
+  domain: https://www.warnmybug.com
+
+production:
+  domain: https://www.warnmybug.com
+
