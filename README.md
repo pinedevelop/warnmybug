@@ -1,13 +1,13 @@
 [![Build Status](https://travis-ci.org/pinedevelop/warnmybug.svg?branch=master)](https://travis-ci.org/pinedevelop/warnmybug) [![Code Climate](https://codeclimate.com/github/pinedevelop/warnmybug/badges/gpa.svg)](https://codeclimate.com/github/pinedevelop/warnmybug) [![Test Coverage](https://codeclimate.com/github/pinedevelop/warnmybug/badges/coverage.svg)](https://codeclimate.com/github/pinedevelop/warnmybug/coverage)
 # warnmybug
 
-Warnmybug is an amazing free and open source project that help you take care with your javascript log's/error/warnings happens on client browser.
+Warnmybug is a great, free and open source project to help take care of javascript log's/error/warnings in the browser.
 
-- Create a projects
-- Copy project js snipet and paste at your project
-- Invite other user’s
-- Receive through e-mail all logs/errors/warnings that happens on yours clients browser
-- See notifications/reports/statistics at project web page
+- Create a project
+- Copy project js snippet and paste it in your website
+- Invite other users
+- Get e-mailed all logs/errors/warnings that happen in user browsers
+- See a summary of notifications/reports/statistics on the project web page
 	
 ***
 
@@ -33,13 +33,13 @@ Você pode clonar o projeto e fazer deploy usando sua infraestrutura, ou se pref
 
 ## Contributing
 
-We will love if you wanna help us to make the warnmybug a great project.
+We would love any help to make Warnmybug a great project.
 
-We have a lot of work to do, features to implement, ideas to think about, you are very welcome to join us and contribute with the project.
+We have lots of work to do, features to implement, and ideas to think about. You are very welcome to join us and contribute to the project.
 
-to contribute with our project, take some considerations:
+When contributing please consider:
 
-- If you have any question or anything you wanna discuss, please, open a github issue and let's discuss that :)
+- If you have any question or anything you wanna discuss, please, open a github issue and we can discuss it there :)
 - We love tests and we have up to 90% covered, please be a good person and keep it high
 
 ***
@@ -56,7 +56,7 @@ Para contribuir com nosso projeto, leve em consideração alguns pontos:
 
 ### Run locally
 
-To run WMB at your local env you will need have installed
+To run WMB at your local env you will need to install:
 
 - Ruby
 - Node
